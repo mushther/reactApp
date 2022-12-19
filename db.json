@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "name": "Hussain",
+      "email": "muttahir513@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Naveet",
+      "email": "nvneet513@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Newline",
+      "email": "newLine@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "fifa",
+      "email": "fifa@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "sony",
+      "email": "sony@gmail.com",
+      "id": 9
+    }
+  ]
+}
