@@ -6,24 +6,73 @@
       "id": 1
     },
     {
-      "name": "Naveet",
-      "email": "nvneet513@gmail.com",
-      "id": 3
+      "name": "sony",
+      "email": "sony@gmail.com",
+      "id": 2
     },
     {
-      "name": "Newline",
-      "email": "newLine@gmail.com",
-      "id": 7
+      "name": "tasleem",
+      "email": "taslim@gamil.com",
+      "id": 3
     },
     {
       "name": "fifa",
       "email": "fifa@gmail.com",
-      "id": 8
+      "id": 4
     },
+    {
+      "name": "newLine",
+      "email": "newLine@gmail.com",
+      "id": 5
+    }
+  ],
+  "accept": [
     {
       "name": "sony",
       "email": "sony@gmail.com",
-      "id": 9
+      "id": 1
+    },
+    {
+      "name": "Hussain",
+      "email": "muttahir513@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Hussain",
+      "email": "muttahir513@gmail.com",
+      "id": 3
+    }
+  ],
+  "reject": [
+    {
+      "name": "sony",
+      "email": "sony@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "barman",
+      "email": "barman@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "tasleem",
+      "email": "taslim@gamil.com",
+      "id": 3
+    },
+    {
+      "name": "Naveet",
+      "email": "nvneet513@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "Newline",
+      "email": "newLine@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "fifa",
+      "email": "fifa@gmail.com",
+      "id": 6
     }
   ]
 }

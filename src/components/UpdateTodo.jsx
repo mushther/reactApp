@@ -3,9 +3,10 @@ import axios from 'axios'
 import React from 'react'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { FcRedo, FcHome } from "react-icons/fc";
 
 const UpdateTodo = () => {
-    const [id, setId] = useState(localStorage.getItem("id"))
+    const [id] = useState(localStorage.getItem("id"))
     const [name, setName] = useState(localStorage.getItem("name"))
     const [email, setEmail] = useState(localStorage.getItem("email"))
     const direct = useNavigate();
@@ -20,9 +21,14 @@ const UpdateTodo = () => {
             <Box w={"80%"} m={"auto"} style={{ border: "1px solid black", padding: "20px", borderRadius: "15px", marginTop: "10px" }}>
 
                 <Box display={"flex"} justifyContent={"space-between"} alignItems={"center"} borderRadius={20} w={"92%"} bg={"light"}>
-                    <Heading m={5} size={"md"} style={{ border: "3px solid blue", borderRadius: "10px", padding: "5px" }}>Update Empolyee Details</Heading>
-                    <Link to="/todolist">
-                        <Button colorScheme='blue'>Back</Button>
+                    <Box display={"flex"} justifyContent={"space-between"} alignItems={"center"}>
+                        <Link to="/">
+                            <Button colorScheme='teal'><FcHome size={40} /></Button>
+                        </Link>
+                        <Heading m={5} size={"md"} style={{ border: "3px solid blue", borderRadius: "10px", padding: "5px" }}>Update Empolyee Details</Heading>
+                    </Box>
+                    <Link to="/">
+                        <Button colorScheme='red'><FcRedo size={40} /></Button>
                     </Link>
                 </Box>
 
