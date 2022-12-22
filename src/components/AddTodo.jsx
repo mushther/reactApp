@@ -12,7 +12,7 @@ const AddTodo = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // console.log("chek");
-        axios.post("http://localhost:8080/todos", { name: name, email: email })
+        axios.post("https://employee-database-omega.vercel.app/todos", { name: name, email: email })
         direct("/")
     }
     //console.log(name, email);

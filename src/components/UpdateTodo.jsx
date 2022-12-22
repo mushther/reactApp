@@ -13,8 +13,8 @@ const UpdateTodo = () => {
 
     const handleSubmit = (id) => {
 
-        axios.put(`http://localhost:8080/todos/${id}`, { name: name, email: email })
-        direct("/todolist")
+        axios.put(`https://employee-database-omega.vercel.app/todos/${id}`, { name: name, email: email })
+        direct("/")
     }
     return (
         <>

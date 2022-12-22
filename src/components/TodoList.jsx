@@ -5,12 +5,12 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaUserTimes, FaUserCheck, FaUserPlus, FaUserEdit } from "react-icons/fa"
-import { FcRedo, FcOk, FcDeleteDatabase } from "react-icons/fc";
+import { FcOk, FcDeleteDatabase } from "react-icons/fc";
 
 const TodoList = () => {
     const [data, setData] = useState([]);
     const getData = () => {
-        axios.get("http://localhost:8080/todos")
+        axios.get("https://employee-database-omega.vercel.app/todos")
             .then((res) => {
                 // console.log(res.data);
                 setData(res.data)
@@ -18,18 +18,18 @@ const TodoList = () => {
     }
 
     const handleDelete = (id) => {
-        axios.delete(`http://localhost:8080/todos/${id}`).then(() => {
+        axios.delete(`https://employee-database-omega.vercel.app/todos/${id}`).then(() => {
             getData();
         });
     }
     const handleReject = (id, name, email) => {
-        axios.post(`http://localhost:8080/reject`, { "name": name, "email": email }).then(() => {
+        axios.post(`https://employee-database-omega.vercel.app/reject`, { "name": name, "email": email }).then(() => {
             getData();
         });
         handleDelete(id);
     }
     const handleAccept = (id, name, email) => {
-        axios.post(`http://localhost:8080/accept`, { "name": name, "email": email }).then(() => {
+        axios.post(`https://employee-database-omega.vercel.app/accept`, { "name": name, "email": email }).then(() => {
             getData();
         });
         handleDelete(id);

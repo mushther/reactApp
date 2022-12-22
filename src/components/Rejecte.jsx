@@ -8,9 +8,9 @@ import { FcRedo } from "react-icons/fc";
 const Rejecte = () => {
     const [data, setData] = useState([]);
     const getData = () => {
-        axios.get("http://localhost:8080/reject")
+        axios.get("https://employee-database-omega.vercel.app/reject")
             .then((res) => {
-                console.log(res.data);
+                // console.log(res.data);
                 setData(res.data)
             })
     }
