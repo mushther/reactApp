@@ -1,11 +1,19 @@
-import { Heading } from '@chakra-ui/react'
+import { Box, Button, FormControl, FormHelperText, FormLabel, Heading, Input } from '@chakra-ui/react'
 import React from 'react'
 
 const Login = () => {
     return (
-        <div>
-            <Heading border={"1px solid black"} fontSize={"150px"} color={"red.400"}>Login</Heading>
-        </div>
+        <Box w={"80%"} m={"auto"} mt={"95px"}>
+            <FormControl>
+                <Heading>Login</Heading>
+                <FormLabel>Email address</FormLabel>
+                <Input type='email' />
+                <FormHelperText textAlign={"start"}>We'll never share your email.</FormHelperText>
+                <FormLabel>Password</FormLabel>
+                <Input type='password' />
+                <Button display={"block"} margin={"none"} marginTop={"15px"} colorScheme={"blue"}>Login</Button>
+            </FormControl>
+        </Box>
     )
 }
 

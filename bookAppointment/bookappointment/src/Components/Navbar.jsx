@@ -7,7 +7,7 @@ import React from 'react'
 const Navbar = () => {
     return (
         <>
-            <Flex minWidth='max-content' alignItems='center' gap='2' bg={"blue.100"} padding={"0.5rem"}>
+            <Flex w={"100%"} minWidth='max-content' alignItems='center' gap='2' bg={"blue.100"} padding={"0.5rem"} position="fixed" top={0}>
                 <Link to="/">
                     <Box p='2' display={"flex"} justifyContent={"space-between"} gap={5}>
                         <Image w={"50px"} border={"1px solid blue"} borderRadius={"50%"} src='https://i.ibb.co/FXsNQFV/Blue-Dental-Clinic-Logo.jpg' />

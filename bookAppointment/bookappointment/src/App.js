@@ -5,7 +5,7 @@ import AllRouting from './Router/AllRouting';
 function App() {
   return (
     <div className="App">
-      <Navbar/>  
+      <Navbar />  
       <AllRouting/>
     </div>
   );
